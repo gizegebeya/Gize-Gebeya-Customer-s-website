@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
   <style>
+    /* General Styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -15,15 +18,31 @@
       padding: 20px;
       text-align: center;
     }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
     .logo img {
       height: auto;
-      max-width: 10%;
+      max-width: 50px;
       border-radius: 50%;
-      margin-right: 60%;
-}
+      margin-right: 10px;
+    }
+
+
+    h2 {
+      margin: 0; /* Remove default margin */
+    }
+
     nav {
       background-color: #f2f2f2;
-      padding: 20px;
+      padding: 10px 0; /* Adjust padding */
       text-align: center;
     }
 
@@ -34,8 +53,8 @@
     }
 
     nav ul li {
-      display: inline;
-      margin-right: 35px;
+      display: inline-block; /* Changed to inline-block for better spacing */
+      margin-right: 15px; /* Adjust as needed */
     }
 
     nav ul li a {
@@ -45,23 +64,50 @@
     }
 
     section {
-      padding: 150px;
+      padding: 20px;
       text-align: center;
+      display: flex;
+      flex-wrap: wrap; /* Allow flex items to wrap */
+      justify-content: center;
     }
 
-    .blog-post {
-      margin-bottom: 30px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 20px;
+    .service-card {
+      width: 300px; /* Set card width */
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
       text-align: left;
     }
 
-    .blog-post h2 {
+    .service-card img {
+      width: 100%; /* Full width for images */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 5px;
       margin-bottom: 10px;
     }
 
-    .blog-post p {
+    .service-card h1 {
       margin-bottom: 10px;
+      font-size: 1.5em; /* Larger font size */
+    }
+
+    .service-card p {
+      margin-bottom: 10px;
+      font-size: 0.9em; /* Smaller font size */
+    }
+
+    .service-card button {
+      padding: 10px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .service-card button:hover {
+      background-color: #555;
     }
 
     footer {
@@ -70,27 +116,42 @@
       padding: 20px;
       text-align: center;
     }
+
     .social-media a {
       color: #fff;
       text-decoration: none;
       margin: 0 10px;
     }
-    h2{text-size-adjust: 1px;
-    margin-right:750px;
+
+    .social-media img {
+      width: 40px; /* Adjust size of social icons */
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 5px;
     }
+
     .qr-codes-footer img {
-            width: 200px;
-            height: 250px;
-            margin: 0 10px;
-            margin-left: 1000px ;
+      width: 100px; /* Adjust size of QR codes */
+      height: auto;
+      margin: 10px;
     }
-    .social-media img, .contact-us img {
-            width: 80px;
-            height: 80px;
-            vertical-align: middle;
-            margin-right: 5px;
-            border-radius: 50%;
-        }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .logo img {
+        max-width: 40px; /* Adjust logo size for smaller screens */
+      }
+
+      nav ul li {
+        display: block;
+        margin-bottom: 10px; /* Adjust spacing */
+      }
+
+      .service-card {
+        width: calc(100% - 40px); /* Full width with margin */
+        margin: 10px 20px;
+      }
+    }
   </style>
   <link rel="icon" type="image/png" href="favicon.jpeg">
 </head>
@@ -98,10 +159,10 @@
   <header>
     <div class="logo">
       <img src="Logo.png" alt="Gize Gebeya logo">
-       <H2>GIZE GEBEYA</H2>
-  </div>
-    <h1>Blog</h1>
-    <p>Read Our Latest Articles</p>
+      <h2>GIZE GEBEYA</h2>
+    </div>
+    <h1>Services</h1>
+    <p>Explore Our Services</p>
   </header>
 
   <nav>
@@ -115,40 +176,37 @@
   </nav>
 
   <section>
-    <div class="blog post">
-      <h1>The Booming Real Estate Market in Ethiopia: Opportunities and Challenges</h1>
-      <p>1 Introduction to the current state of the Ethiopian real estate market, highlighting the growth and demand for both residential and commercial properties. <br>
-        2 Discuss the key drivers behind the real estate boom, such as urbanization, economic growth, and rising middle class. <br>
-        3 Explore the unique challenges faced by buyers and sellers in the Ethiopian real estate market, including infrastructure development, access to financing, and regulatory frameworks. <br>
-        4 Provide tips and strategies for navigating the Ethiopian real estate market, covering topics like property research, negotiation, and legal considerations. <br>
-        5 Conclude with the future outlook and potential investment opportunities in the Ethiopian real estate sector.</p>
-      <a href="#">Read More</a>
+    <div class="service-card">
+      <img src="LUXURY HOUSE.jpg" alt="Service 1">
+      <h1>Service 1</h1>
+      <p>At GIZE GEBEYA, we pride ourselves on providing the perfect services for all your house sale needs. Our experienced team of real estate professionals work tirelessly to ensure a smooth and successful home selling process for our clients. From expert pricing guidance and strategic marketing to seamless negotiations and a stress-free closing, we handle every aspect of the home sale with the utmost care and efficiency. Our tailored approach and unwavering commitment to customer satisfaction have made us the trusted choice for home sellers throughout the region. When you partner with [Company Name], you can have complete confidence that your home is in capable hands from start to finish. Let us demonstrate how our perfect services can maximize the value of your most valuable asset - your home.</p>
+      <button>Learn More</button>
     </div>
 
-    <div class="blog-post">
-      <h1>Navigating the Used Car Market in Ethiopia: A Buyer's Guide</h1>
-      <p>1 Overview of the used car market in Ethiopia, including the popular car models, pricing trends, and typical purchasing process. <br>
-        2 Highlight the importance of thorough vehicle inspection and the role of trusted mechanics in the used car buying process. <br>
-        3 Discuss the common pitfalls to avoid when buying a used car in Ethiopia, such as hidden mechanical issues, fraudulent sellers, and registration challenges. <br>
-        4 Provide a step-by-step guide for first-time used car buyers in Ethiopia, covering topics like budgeting, research, negotiation, and financing options. <br>
-        5 Emphasize the significance of conducting due diligence and prioritizing safety and reliability when purchasing a used car in Ethiopia.</p>
-      <a href="#">Read More</a>
+    <div class="service-card">
+      <img src="LUXURY CAR.jpg" alt="Service 2">
+      <h1>Service 2</h1>
+      <p>At GIZE GEBEYA, we are proud to offer the perfect services for all your car selling needs. Our knowledgeable team of automotive experts work diligently to ensure a seamless and successful sales process for our clients. From accurately appraising your vehicle's value and crafting a strategic marketing plan, to handling all negotiations and paperwork, we guide you through every step with unparalleled care and expertise. Our proven track record of securing top-dollar offers and fast turnaround times has made us the go-to choice for individuals looking to sell their cars quickly and for the best price. When you partner with [Company Name], you can have complete peace of mind knowing your vehicle is in the hands of true professionals committed to delivering the perfect car sale experience. Let us demonstrate how our exceptional services can maximize the return on your automotive asset.</p>
+      <button>Learn More</button>
     </div>
 
-    <div class="blog-post">
-      <h1>Selling Your Car in Ethiopia: Maximizing Your Return on Investment</h1>
-      <p>1 Introduction to the current state of the Ethiopian car sales market, including factors that influence demand and pricing. <br>
-        2 Offer tips and strategies for preparing your car for sale, such as thorough cleaning, minor repairs, and comprehensive documentation. <br>
-        3 Discuss the various sales channels available in Ethiopia, including dealerships, online platforms, and private transactions, and the pros and cons of each. <br>
-        4 Provide guidance on pricing your car competitively in the Ethiopian market, taking into account factors like mileage, condition, and market trends. <br>
-        5 Advise on handling negotiations, managing test drives, and ensuring a smooth and transparent sales process. <br>
-        6 Emphasize the importance of understanding your rights and responsibilities as a car seller in Ethiopia to protect your interests.</p>
-      <a href="#">Read More</a>
+    <div class="service-card">
+      <img src="service3.jpg" alt="Service 3">
+      <h1>Service 3</h1>
+      <p>We Are Planning A New Big Surprise</p>
+      <button>Learn More</button>
+    </div>
+
+    <div class="service-card">
+      <img src="service4.jpg" alt="Service 4">
+      <h1>Service 4</h1>
+      <p>We Are Planning A New Big Surprise</p>
+      <button>Learn More</button>
     </div>
   </section>
 
   <footer>
-    <p>Contact us at: Phone: +251978906766/+251973126041 | Email: gizegebeyacompany@gmail.com</p>
+    <p>Contact us at: Phone: +251978906766 / +251973126041 | Email: gizegebeyacompany@gmail.com</p>
     <section>
       <div class="social-media">
         <a href="#" class="social-icon"><img src="Youtube.png" alt="YouTube"></a>
@@ -157,15 +215,16 @@
         <a href="https://www.instagram.com/gizegebeya?igsh=bnVqdHNseXdqNDg=" class="social-icon"><img src="INSTAGRAM.jpg" alt="instagram"></a>
         <a href="https://www.facebook.com/profile.php?id=61550732175981" class="social-icon"><img src="FACEBOOK.png" alt="facebook"></a>
         <a href="https://t.me/gizegebeyasale" class="social-icon"><img src="Telegram channel.jpg" alt="Telegram"></a>
-   
-      <a href="gizegebeyacompany@gmail.com" class="social-icon"><img src="GMAIL.png" alt="gmail"></a>
-      <a href="https://t.me/gizegebeyacompany" class="social-icon"><img src="Telegram.jpg" alt="TELEGRAM"></a>
-    </div>
-    <div class="qr-codes-footer">
-      <a href="https://gizegebeya.github.io/Gize-Gebeya-Customer-s-website/">
-      <img src="QR CODE FOR CUSTOMERS.png" alt="qrcodeforcustomers"></a>
-  </div>
+        <a href="mailto:gizegebeyacompany@gmail.com" class="social-icon"><img src="GMAIL.png" alt="gmail"></a>
+        <a href="https://t.me/gizegebeyacompany" class="social-icon"><img src="Telegram.jpg" alt="TELEGRAM"></a>
+      </div>
+      <div class="qr-codes-footer">
+        <a href="https://gizegebeya.github.io/Gize-Gebeya-Customer-s-website/">
+          <img src="QR CODE FOR CUSTOMERS.png" alt="QR Code for Customers">
+        </a>
+      </div>
     </section>
   </footer>
+
 </body>
 </html>
