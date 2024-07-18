@@ -35,6 +35,10 @@
       margin-right: 10px;
     }
 
+    .logo h2 {
+      margin: 0; /* Remove default margin */
+      font-size: 1.5rem; /* Adjust font size */
+    }
 
     h2 {
       margin: 0; /* Remove default margin */
@@ -138,8 +142,18 @@
 
     /* Responsive Design */
     @media (max-width: 768px) {
+      .logo {
+        flex-direction: column;
+        align-items: center;
+      }
+
       .logo img {
-        max-width: 40px; /* Adjust logo size for smaller screens */
+        max-width: 30px;
+        margin-right: 0;
+      }
+
+      .logo h2 {
+        font-size: 1.2rem;
       }
 
       nav ul li {
@@ -161,6 +175,8 @@
       <img src="Logo.png" alt="Gize Gebeya logo">
       <h2>GIZE GEBEYA</h2>
     </div>
+    <br>
+    <br>
     <h1>Services</h1>
     <p>Explore Our Services</p>
   </header>
