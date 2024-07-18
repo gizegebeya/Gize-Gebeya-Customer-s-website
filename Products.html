@@ -21,18 +21,22 @@
 
     .logo {
       display: flex;
-      align-items: center;
-      justify-content: flex-start;
+      align-items: center; /* Align items horizontally */
+      justify-content: flex-start; /* Adjust as per original design */
       position: absolute;
       top: 20px;
       left: 20px;
     }
 
     .logo img {
-      height: auto;
       max-width: 50px;
       border-radius: 50%;
       margin-right: 10px;
+    }
+
+    .logo h2 {
+      margin: 0; /* Remove default margin */
+      font-size: 1.5rem; /* Adjust font size */
     }
 
     h2 {
@@ -41,7 +45,7 @@
 
     nav {
       background-color: #f2f2f2;
-      padding: 10px 0; /* Adjust padding */
+      padding: 10px 0;
       text-align: center;
     }
 
@@ -49,11 +53,12 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
     }
 
     nav ul li {
-      display: inline-block; /* Changed to inline-block for better spacing */
-      margin-right: 15px; /* Adjust as needed */
+      margin-right: 15px;
     }
 
     nav ul li a {
@@ -94,9 +99,9 @@
     }
 
     .product-card img {
-      width: 100%; /* Full width for images */
-      max-width: 300px; /* Max width for images */
-      height: auto; /* Maintain aspect ratio */
+      width: 100%;
+      max-width: 300px;
+      height: auto;
       margin-bottom: 10px;
     }
 
@@ -134,7 +139,7 @@
     }
 
     .social-media img, .contact-us img {
-      width: 40px; /* Adjust size of social icons */
+      width: 40px;
       height: 40px;
       vertical-align: middle;
       margin-right: 5px;
@@ -142,24 +147,34 @@
     }
 
     .qr-codes-footer img {
-      width: 100px; /* Adjust size of QR codes */
+      width: 100px;
       height: auto;
       margin: 10px;
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
+      .logo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Adjust alignment */
+      }
+
       .logo img {
-        max-width: 40px; /* Adjust logo size for smaller screens */
+        max-width: 30px;
+        margin-right: 10px;
+      }
+
+      .logo h2 {
+        font-size: 1.2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
       }
 
       nav ul li {
-        display: block;
-        margin-bottom: 10px; /* Adjust spacing */
-      }
-
-      .product-card img {
-        max-width: 100%;
+        margin: 5px 0; /* Adjust spacing */
       }
 
       .social-media img, .contact-us img {
@@ -180,6 +195,8 @@
       <img src="Logo.png" alt="Gize Gebeya logo">
       <h2>GIZE GEBEYA</h2>
     </div>
+    <br>
+    <br>
     <h1>Products</h1>
     <p>Choose Your Suitable Products</p>
   </header>
