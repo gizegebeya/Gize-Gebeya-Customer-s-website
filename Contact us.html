@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
   <style>
-    /* General Styles */
+    /* Your provided CSS styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
 
-    /* Header Styles */
     header {
       background-color: #333;
       color: #fff;
@@ -36,11 +35,9 @@
       margin-right: 10px;
     }
 
-
-    /* Navigation Styles */
     nav {
       background-color: #f2f2f2;
-      padding: 10px 0; /* Adjust padding */
+      padding: 10px 0; /* Adjusted padding */
       text-align: center;
     }
 
@@ -61,7 +58,6 @@
       padding: 10px;
     }
 
-    /* Section Styles */
     section {
       padding: 20px;
       text-align: center;
@@ -83,6 +79,7 @@
     }
 
     .contact-form input[type="text"],
+    .contact-form input[type="email"],
     .contact-form textarea {
       width: 100%;
       padding: 10px;
@@ -90,6 +87,10 @@
       border: 1px solid #ccc;
       margin-bottom: 20px;
       box-sizing: border-box; /* Ensure padding is included in width */
+    }
+
+    .contact-form textarea {
+      resize: vertical; /* Allow vertical resizing of textarea */
     }
 
     .contact-form button {
@@ -106,7 +107,6 @@
       background-color: #555;
     }
 
-    /* Footer Styles */
     footer {
       background-color: #333;
       color: #fff;
@@ -155,6 +155,7 @@
       }
 
       .contact-form input[type="text"],
+      .contact-form input[type="email"],
       .contact-form textarea {
         width: 100%;
       }
@@ -200,7 +201,7 @@
         <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
 
         <button type="submit">Send Message</button>
       </form>
